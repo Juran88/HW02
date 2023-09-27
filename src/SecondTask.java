@@ -5,15 +5,13 @@ public class SecondTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter height: ");
+        System.out.println("Please enter height in meters: ");
         double heigh = Double.parseDouble(scanner.nextLine());
-        System.out.println("Pleas enter weight: ");
+        System.out.println("Pleas enter weight in kilograms: ");
         double weight = scanner.nextDouble();
 
-        double area = heigh * heigh;
-        System.out.println("Heigh is");
 
-        double weigh = weight / (heigh * heigh);
-        System.out.println("Body mass index" + " " + area);
+        double bmi = weight / (heigh * heigh);
+        System.out.println("Body mass index" + " " + bmi);
     }
 }
